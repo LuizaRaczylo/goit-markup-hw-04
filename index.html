@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,24 +17,28 @@
   <body>
     <header class="header">
       <div class="container header-section">
-      <nav class="navigation">
-        <a href="index.html" class="logotype link"><span class="highlight">Web</span>Studio</a>
-        <ul class="navigation-items">
-          <li class="navigation-item"><a href="" class="link">Agencja</a></li>
-          <li class="navigation-item"><a href="portfolio.html" class="link">Portfolio</a></li>
-          <li class="navigation-item"><a href="" class="link">Kontakt</a></li>
+        <nav class="navigation">
+          <a href="index.html" class="logotype link"><span class="highlight">Web</span>Studio</a>
+          <ul class="navigation-items">
+            <li class="navigation-item"><a href="" class="link">Agencja</a></li>
+            <li class="navigation-item"><a href="portfolio.html" class="link">Portfolio</a></li>
+            <li class="navigation-item"><a href="" class="link">Kontakt</a></li>
+          </ul>
+        </nav>
+        <ul class="header-contact">
+          <svg class="icon-link" width="16" height="12" ;>
+            <use href="./images/icons.svg#icon-envelope"></use>
+          </svg>
+          <li class="contact-item1">
+            <a href="mailto:info@devstudio.com" class="link contact">info@devstudio.com</a>
+          </li>
+          <svg class="icon-link" width="10" height="16" ;>
+            <use href="./images/icons.svg#icon-smartphone"></use>
+          </svg>
+          <li class="contact-item2">
+            <a href="tel:+48111111111" class="link contact">+48 111 111 111</a>
+          </li>
         </ul>
-      </nav>
-      <ul class="header-contact">
-        <svg class="icon-link" width="16" height="12";>
-          <use href="./images/icons.svg#icon-envelope"></use>
-        </svg>
-        <li class="contact-item1"><a href="mailto:info@devstudio.com" class="link contact">info@devstudio.com</a></li>
-        <svg class="icon-link" width="10" height="16";>
-          <use href="./images/icons.svg#icon-smartphone"></use>
-        </svg>
-        <li class="contact-item2"><a href="tel:+48111111111" class="link contact">+48 111 111 111</a></li>
-      </ul>
       </div>
     </header>
     <main>
@@ -46,9 +50,9 @@
         <ul class="contents-items">
           <li>
             <div class="contents-icons">
-            <svg class="icon-contents" width="70" height="70">
-              <use href="./images/icons.svg#icon-antenna"></use>
-            </svg>
+              <svg class="icon-contents" width="70" height="70">
+                <use href="./images/icons.svg#icon-antenna"></use>
+              </svg>
             </div>
             <h3 class="contents-title">LOREM IPSUM</h3>
             <p class="contents-text">
@@ -58,9 +62,9 @@
           </li>
           <li>
             <div class="contents-icons">
-            <svg class="icon-contents" width="70" height="70">
-              <use href="./images/icons.svg#icon-clock"></use>
-            </svg>
+              <svg class="icon-contents" width="70" height="70">
+                <use href="./images/icons.svg#icon-clock"></use>
+              </svg>
             </div>
             <h3 class="contents-title">LOREM IPSUM</h3>
             <p class="contents-text">
@@ -70,9 +74,9 @@
           </li>
           <li>
             <div class="contents-icons">
-            <svg class="icon-contents" width="70" height="70">
-              <use href="./images/icons.svg#icon-diagram"></use>
-            </svg>
+              <svg class="icon-contents" width="70" height="70">
+                <use href="./images/icons.svg#icon-diagram"></use>
+              </svg>
             </div>
             <h3 class="contents-title">LOREM IPSUM</h3>
             <p class="contents-text">
@@ -82,9 +86,9 @@
           </li>
           <li>
             <div class="contents-icons">
-            <svg class="icon-contents" width="70" height="70">
-              <use href="./images/icons.svg#icon-astronaut"></use>
-            </svg>
+              <svg class="icon-contents" width="70" height="70">
+                <use href="./images/icons.svg#icon-astronaut"></use>
+              </svg>
             </div>
             <h3 class="contents-title">LOREM IPSUM</h3>
             <p class="contents-text">
@@ -125,63 +129,235 @@
       </section>
       <section class="team">
         <div class="container section">
-        <h2 class="team-title">Nasz zespół</h2>
-        <ul class="team-items">
-          <li>
-            <figure class="team-item">
-              <img class="team-image"
-                src="https://raw.githubusercontent.com/LuizaRaczylo/goit-markup-hw-02/main/images/jd1.jpg"
-                alt="Product Designer"
-                width="270"
-                height="260"
-              />
-              <figcaption class="team-name">
-                <p class="team-name-line1">John Doe</p>
-                <p class="team-name-line2">Product Designer</p>
-              </figcaption>
-            </figure>
+          <h2 class="team-title">Nasz zespół</h2>
+          <ul class="team-items">
+            <li>
+              <figure class="team-item">
+                <img
+                  class="team-image"
+                  src="https://raw.githubusercontent.com/LuizaRaczylo/goit-markup-hw-02/main/images/jd1.jpg"
+                  alt="Product Designer"
+                  width="270"
+                  height="260"
+                />
+                <figcaption class="team-name">
+                  <p class="team-name-line1">John Doe</p>
+                  <p class="team-name-line2">Product Designer</p>
+                </figcaption>
+                <ul class="social-list">
+                  <li class="social-list-item link">
+                    <a class="social-list_link" href="#">
+                      <svg class="social-icon">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item link">
+                    <a class="social-list_link" href="#">
+                      <svg class="social-icon">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item link">
+                    <a class="social-list_link" href="#">
+                      <svg class="social-icon">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item link">
+                    <a class="social-list_link" href="#">
+                      <svg class="social-icon">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </figure>
+            </li>
+            <li>
+              <figure class="team-item">
+                <img
+                  class="team-image"
+                  src="https://raw.githubusercontent.com/LuizaRaczylo/goit-markup-hw-02/main/images/jd2.jpg"
+                  alt="Frontend Developer"
+                  width="270"
+                  height="260"
+                />
+                <figcaption class="team-name">
+                  <p class="team-name-line1">John Doe</p>
+                  <p class="team-name-line2">Frontend Developer</p>
+                </figcaption>
+                <ul class="social-list">
+                  <li class="social-list-item link">
+                    <a class="social-list_link" href="#">
+                      <svg class="social-icon">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item link">
+                    <a class="social-list_link" href="#">
+                      <svg class="social-icon">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item link">
+                    <a class="social-list_link" href="#">
+                      <svg class="social-icon">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item link">
+                    <a class="social-list_link" href="#">
+                      <svg class="social-icon">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </figure>
+            </li>
+            <li>
+              <figure class="team-item">
+                <img
+                  class="team-image"
+                  src="https://raw.githubusercontent.com/LuizaRaczylo/goit-markup-hw-02/main/images/jd3.jpg"
+                  alt="Marketing"
+                  width="270"
+                  height="260"
+                />
+                <figcaption class="team-name">
+                  <p class="team-name-line1">John Doe</p>
+                  <p class="team-name-line2">Marketing</p>
+                </figcaption>
+                <ul class="social-list">
+                  <li class="social-list-item link">
+                    <a class="social-list_link" href="#">
+                      <svg class="social-icon">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item link">
+                    <a class="social-list_link" href="#">
+                      <svg class="social-icon">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item link">
+                    <a class="social-list_link" href="#">
+                      <svg class="social-icon">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item link">
+                    <a class="social-list_link" href="#">
+                      <svg class="social-icon">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </figure>
+            </li>
+            <li>
+              <figure class="team-item">
+                <img
+                  class="team-image"
+                  src="https://raw.githubusercontent.com/LuizaRaczylo/goit-markup-hw-02/main/images/jd4.jpg"
+                  alt="UI Designer"
+                  width="270"
+                  height="260"
+                />
+                <figcaption class="team-name">
+                  <p class="team-name-line1">John Doe</p>
+                  <p class="team-name-line2">UI Designer</p>
+                </figcaption>
+                <ul class="social-list">
+                  <li class="social-list-item link">
+                    <a class="social-list_link" href="#">
+                      <svg class="social-icon">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item link">
+                    <a class="social-list_link" href="#">
+                      <svg class="social-icon">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item link">
+                    <a class="social-list_link" href="#">
+                      <svg class="social-icon">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item link">
+                    <a class="social-list_link" href="#">
+                      <svg class="social-icon">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="clients container section">
+        <h2 class="clients-title">Nasi klienci</h2>
+        <ul class="clients-logo">
+          <li class="clients-item">
+            <a class="clients-item_link" href="#">
+              <svg class="client-link">
+                <use href="./images/icons.svg#icon-logo1"></use>
+              </svg>
+            </a>
           </li>
-          <li>
-            <figure class="team-item">
-              <img class="team-image"
-                src="https://raw.githubusercontent.com/LuizaRaczylo/goit-markup-hw-02/main/images/jd2.jpg"
-                alt="Frontend Developer"
-                width="270"
-                height="260"
-              />
-              <figcaption class="team-name">
-                <p class="team-name-line1">John Doe</p>
-                <p class="team-name-line2">Frontend Developer</p>
-              </figcaption>
-            </figure>
+          <li class="clients-item">
+            <a class="clients-item_link" href="#">
+              <svg class="client-link">
+                <use href="./images/icons.svg#icon-logo2"></use>
+              </svg>
+            </a>
           </li>
-          <li>
-            <figure class="team-item">
-              <img class="team-image"
-                src="https://raw.githubusercontent.com/LuizaRaczylo/goit-markup-hw-02/main/images/jd3.jpg"
-                alt="Marketing"
-                width="270"
-                height="260"
-              />
-              <figcaption class="team-name">
-                <p class="team-name-line1">John Doe</p>
-                <p class="team-name-line2">Marketing</p>
-              </figcaption>
-            </figure>
+          <li class="clients-item">
+            <a class="clients-item_link" href="#">
+              <svg class="client-link">
+                <use href="./images/icons.svg#icon-logo3"></use>
+              </svg>
+            </a>
           </li>
-          <li>
-            <figure class="team-item">
-              <img class="team-image"
-                src="https://raw.githubusercontent.com/LuizaRaczylo/goit-markup-hw-02/main/images/jd4.jpg"
-                alt="UI Designer"
-                width="270"
-                height="260"
-              />
-              <figcaption class="team-name">
-                <p class="team-name-line1">John Doe</p>
-                <p class="team-name-line2">UI Designer</p>
-              </figcaption>
-            </figure>
+          <li class="clients-item">
+            <a class="clients-item_link" href="#">
+              <svg class="client-link">
+                <use href="./images/icons.svg#icon-logo4"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="clients-item">
+            <a class="clients-item_link" href="#">
+              <svg class="client-link">
+                <use href="./images/icons.svg#icon-logo5"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="clients-item">
+            <a class="clients-item_link" href="#">
+              <svg class="client-link">
+                <use href="./images/icons.svg#icon-logo6"></use>
+              </svg>
+            </a>
           </li>
         </ul>
         </div>
@@ -189,14 +365,14 @@
     </main>
     <footer class="footer">
       <div class="container footer-section">
-      <a href="index.html" class="footer-link"><span class="highlight">Web</span>Studio</a>
-      <address class="footer-address">
-        <ul>
-          <li>m.Warszawa, Aleje Jerozolimskie 21</li>
-          <li><a href="mailto:info@example.com" class="link">info@example.com</a></li>
-          <li><a href="tel:+48111111111" class="link">+48 111 111 111</a></li>
-        </ul>
-      </address>
+        <a href="index.html" class="footer-link"><span class="highlight">Web</span>Studio</a>
+        <address class="footer-address">
+          <ul>
+            <li>m.Warszawa, Aleje Jerozolimskie 21</li>
+            <li><a href="mailto:info@example.com" class="link">info@example.com</a></li>
+            <li><a href="tel:+48111111111" class="link">+48 111 111 111</a></li>
+          </ul>
+        </address>
       </div>
     </footer>
   </body>

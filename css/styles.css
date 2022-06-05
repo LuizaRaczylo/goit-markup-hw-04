@@ -16,6 +16,7 @@ body {
     --detail-font: 14px;
     --subject-font: 16px;
     --background-contents: #F5F4FA;
+    --icons-color: #AFB1B8;
 }
 ul {
     margin: 0;
@@ -61,6 +62,7 @@ ul {
 .icon-link {
     margin-right: 10px;
     cursor: pointer;
+    fill: var(--detail-color);
 }
 .logotype, .footer-link {
     font-family: 'Raleway', sans-serif;
@@ -96,6 +98,10 @@ ul {
 .navigation-items .link:visited {
     color:#212121;
 }
+.icon-link:hover,
+.icon-link:focus {
+    fill: var(--brand-color);
+}
 .link:hover,
 .link:focus,
 .footer-link:hover,
@@ -103,9 +109,7 @@ ul {
 .footer-address .link:hover,
 .footer-address .link:focus,
 .navigation-items .link:hover,
-.navigation-items .link:focus,
-.icon-link:hover,
-.icon-link:focus {
+.navigation-items .link:focus {
     color: var(--brand-color);
 }
 .footer-address .link,
@@ -119,6 +123,11 @@ ul {
 /* banner */
 .head {
     background-color: var(--body-color);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                    url("/images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -188,7 +197,7 @@ ul {
     align-items: center;
 }
 /* czym się zajmujemy */
-.expansion-title, .team-title {
+.expansion-title, .team-title, .clients-title {
     font-size: 36px;
     line-height: 1.16;
     display: flex;
@@ -214,11 +223,12 @@ ul {
     font-weight: 500;
     padding-top: 30px;
     margin-top: 0;
+    margin-bottom: 10px;
 }
 .team-name-line2 {
     color: var(--detail-color);
     font-size: var(--subject-font);
-    padding-bottom: 30px;
+    margin-top: 0;
 }
 .team-item {
     margin: 0;
@@ -227,6 +237,35 @@ ul {
     border-bottom-right-radius: 4px;
     border-bottom-left-radius: 4px;
     box-shadow: 0px 2px rgba(0, 0, 0, 0.2), 0px 1px rgba(0, 0, 0, 0.14), 0px 1px rgba(0, 0, 0, 0.12)
+}
+.social-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 32px;
+    margin-right: 32px;
+    padding-bottom: 18px;
+}
+.social-icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--icons-color);
+}
+.social-list_link:hover,
+.social-list_link:focus,
+.social-icon:hover,
+.social-icon:focus {
+    fill: var(--bright-color);
+    background-color: var(--brand-color);
+}
+.social-list_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
 }
 .team-image {
     display: block;
@@ -238,6 +277,33 @@ ul {
 .team-items li {
     width: 270px;
 }
+/* nasi klienci*/
+.clients-logo {
+    display: flex;
+    justify-content: space-between;
+}
+.clients-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+.clients-item:hover,
+.clients-item:focus,
+.client-link:hover,
+.client-link:focus {
+    fill: var(--brand-color);
+}
+.client-link {
+    width: 106px;
+    height: 60px;
+    fill: var(--icons-color);
+ 
+}
+
 /* stopka*/
 .footer {
     background-color: var(--body-color);
