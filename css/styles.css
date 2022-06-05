@@ -291,11 +291,15 @@ ul {
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 }
-.clients-item:hover,
-.clients-item:focus,
 .client-link:hover,
 .client-link:focus {
     fill: var(--brand-color);
+}
+.clients-item:hover,
+.clients-item:focus {
+    fill: var(--brand-color);
+    border: 1px solid var(--brand-color);
+    cursor: pointer;
 }
 .client-link {
     width: 106px;
